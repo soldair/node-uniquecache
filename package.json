@@ -1,0 +1,29 @@
+{
+  "name": "uniquecache",
+  "version": "0.0.0",
+  "description": "cache that you found some unique value and make sure you don't tell anyone else in this process that it is unique while you save it.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/soldair/node-uniquecache.git"
+  },
+  "keywords": [
+    "cache",
+    "unique",
+    "lru",
+    "happy"
+  ],
+  "author": "Ryan Day <soldair@gmail.com>",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "266c701e2c4f9e1778a366ee4d2442d54dac0783",
+  "bugs": {
+    "url": "https://github.com/soldair/node-uniquecache/issues"
+  },
+  "dependencies": {
+    "logtime-interval": "0.0.1"
+  }
+}
