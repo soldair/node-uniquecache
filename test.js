@@ -1,5 +1,5 @@
-var test = require('tap').test
-var uniquecache = require('../lib/uniquecache')
+var test = require('tape')
+var uniquecache = require('./index')
 
 test("can cache a unique",function(t){
 

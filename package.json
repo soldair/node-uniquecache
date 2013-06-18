@@ -25,5 +25,8 @@
   },
   "dependencies": {
     "logtime-interval": "0.0.1"
+  },
+  "devDependencies": {
+    "tape": "~1.0.4"
   }
 }
