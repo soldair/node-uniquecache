@@ -17,6 +17,13 @@ var caches = {};
 module.exports = function(key,fetch,interval,max){
   var timers = logtime();
 
+  if(typeof(key) === 'function') {
+    max = interval;
+    interval = fetch;
+    fetch = key;
+    key = false;
+  }
+
   ++id;
   caches[id] = {};
   interval = interval || 1000*60*5;
@@ -67,6 +74,7 @@ module.exports.caches = caches;
 
 function _key(obj,key){
   var k = "";
+  if(!key) return obj;
   for( var i=0;i<key.length;++i){
     k += ':'+obj[key[i]];
   } 
