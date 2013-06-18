@@ -1,6 +1,6 @@
 {
   "name": "uniquecache",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "cache that you found some unique value and make sure you don't tell anyone else in this process that it is unique while you save it.",
   "main": "index.js",
   "scripts": {

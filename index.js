@@ -33,7 +33,7 @@ module.exports = function(key,fetch,interval,max){
     var keys = Object.keys(caches[id]);
     for (var i =0;i<keys.length;++i){
       if(Math.abs(keys[i]-timers.currentTime) > interval) {
-        delete caches[i][keys[i]];
+        delete caches[id][keys[i]];
       }
     }
 
